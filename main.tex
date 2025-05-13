@@ -1,0 +1,183 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{eurosym}
+\usepackage{multicol}
+\raggedbottom
+
+% Marges personnalisées
+\geometry{
+  left=1.5cm,
+  right=1.5cm,
+  top=1cm,
+  bottom=1.5cm
+}
+
+% Définition des couleurs
+\definecolor{accentcolor}{RGB}{0,90,160}
+\definecolor{graytext}{RGB}{100,100,100}
+
+% Personnalisation des listes
+\setlist[itemize]{
+  leftmargin=*,
+  nosep,
+  topsep=0pt,
+  partopsep=0pt,
+  before=\vspace{0.2em},
+  after=\vspace{0.6em}
+}
+
+% Commande pour titre de section
+\newcommand{\cvsection}[1]{%
+  \vspace{0pt}
+  \noindent
+  \textcolor{accentcolor}{\rule{2cm}{1.5pt}}\hspace{0.5em}
+  {\large\bfseries\color{accentcolor}#1}
+  \vspace{0.5em}
+  \par\nobreak
+}
+
+% Environnement pour les expériences
+\newenvironment{experience}[2]{%
+  \vspace{0.1em}
+  \noindent\textbf{\color{accentcolor}#1}\hfill\textcolor{graytext}{#2}
+  \vspace{-0.1em}
+  \begin{itemize}
+}{%
+  \end{itemize}
+  \vspace{0.1em}
+}
+
+\begin{document}
+
+% Entête du CV : deux colonnes séparées proprement
+\begin{minipage}[t]{0.8\textwidth}
+    \vspace*{0.8cm} % Remonte SEULEMENT le titre
+    {\Large\bfseries\color{accentcolor} Chargée de mission digitale\\(Ouverte à divers métiers)} \\ \hfill Alternance Winside – Transformation Numérique des Entreprises (TNE)\\ NoCode, LowCode, Power Platform \& Automatisation\\[0.4em]
+    {\small\itshape Sept. 2025 - 4 jours en entreprise/
+1 jour en formation}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+    \raggedleft
+    \vspace*{-0cm} % Remonte SEULEMENT la photo
+    \includegraphics[width=2.5cm]{nouss.jpg}\\[0.5em]
+    {\normalsize\bfseries\color{accentcolor}Noussaiba AYADI}
+\end{minipage}
+
+\vspace*{0.0cm}  % <-- ajuste ici pour remonter la section Contact
+\begin{minipage}[t]{0.6\textwidth}
+  \cvsection{Contact}
+  {\large
+  \begin{itemize}
+    \item \textbf{Email:} \texttt{noussaiba.ayadi@gmail.com}
+    \item \textbf{Tél:} +33 6 58 92 84 94
+    \item \textbf{LinkedIn:} \texttt{linkedin.com/in/noussaiba-ayadi}
+    \item \textbf{Adresse:} 92330, Sceaux (Mobilité IDF)
+  \end{itemize}
+  }
+\end{minipage}
+
+\cvsection{Profil}
+\begin{itemize}
+    \item ingénieur avec un niveau bac +8, avec plus de 10 ans d'exprience  expérimentée en gestion de projet, qualité et coordination interdisciplinaire.
+       \item En spécialisation sur les méthodes et outils \textbf{NoCode, LowCode et d’automatisation}, avec un focus sur la \textbf{Power Platform} (Power Apps, Power Automate, AI Builder).
+       \item Ouverte à différents types de missions :
+    \begin{itemize}
+        \item Chargée de mission digitale
+        \item Coordinatrice de projets digitaux
+        \item Assistante transformation numérique
+        \item Testeuse fonctionnelle / QA / Testeuse NoCode
+        \item Data coordinator
+        \item Product owner junior
+        \item Chargée d'automatisation de processus
+        \item Support outils digitaux / référente outils collaboratifs
+        \item Conceptrice d'applications NoCode (Power Apps / Glide / Softr)
+        \item Assistante chef de projet digital
+    \end{itemize}
+  \end{itemize}
+
+\cvsection{Compétences clés – Coordination et outils digitaux}
+\begin{itemize}
+    \item \textbf{Création d'applications NoCode} : développement d'outils et d’interfaces avec Power Apps, Notion ou Airtable adaptés aux besoins métier.
+    
+    \item \textbf{Automatisation de processus} : conception de flux automatisés via Power Automate et Zapier pour optimiser les tâches répétitives (RH, administratives, commerciales…).
+    
+    \item \textbf{Utilisation de la Power Platform} : intégration de Power Apps, Power Automate, Copilot Studio et AI Builder pour créer des solutions digitales intelligentes et connectées.
+    
+    \item \textbf{Test fonctionnel et qualité logicielle} : rédaction de cas de test, exécution de tests manuels et automatisés, validation de fonctionnalités et remontée des anomalies.
+    
+    \item \textbf{Structuration et exploitation de bases de données} : collecte, centralisation et mise en forme des données pour un usage métier (Excel, Power BI, Notion, SharePoint).
+    
+    \item \textbf{Connaissance du marketing digital} : maîtrise des principes de visibilité en ligne, parcours utilisateur, et outils de communication digitale (emailing, CRM, réseaux sociaux).
+    
+    \item \textbf{Gestion de projet digital} : suivi des livrables, animation d’équipe projet, coordination avec les parties prenantes, reporting d’avancement (Jira, Trello, MS Project).
+    
+    \item \textbf{Collaboration à distance et support aux équipes} : usage avancé d’outils collaboratifs (\textit{Slack, Zoom, Miro, Notion}) pour assurer la communication, le support technique ou fonctionnel, et le travail en équipe hybride.
+    
+    \item \textbf{Méthodologie orientée projet} : pratique de la pédagogie par projet, résolution de problématiques métiers réelles, prototypage de solutions, et déploiement opérationnel.
+\end{itemize}
+\newpage
+\cvsection{Expériences Professionnelles}
+
+\begin{experience}{Ingénieure Assurance Qualité Logicielle | IT Phare Production}{2022--2025}
+  \item Pilotage de l’assurance qualité et de la performance d’une plateforme e-commerce B2B dans un environnement agile et international (Tunisie, Italie, Espagne)
+  \item Gestion de projets digitaux intégrant CRM, ERP et e-commerce, avec automatisation via \textbf{java}, \textbf{Python}
+  \item Analyse de données commerciales, suivi de \textbf{KPIs} et production de \textbf{reportings} avec \textbf{Excel} et \textbf{Power BI}
+  \item Amélioration de la \textbf{base de données client} : nettoyage, structuration, enrichissement, fiabilisation des données
+  \item Suivi de l'intégration continue via \textbf{Jenkins (CI/CD)}, gestion des livrables avec \textbf{Jira}, documentation dans \textbf{Confluence}
+  \item Animation de réunions hebdomadaires en anglais, coordination avec les équipes projet et parties prenantes
+  \item Utilisation quotidienne d’\textbf{outils digitaux} : \textbf{Slack}, \textbf{Zoom}, \textbf{Trello}, automatisation de tâches récurrentes
+\end{experience}
+
+
+\begin{experience}{Cheffe de Projet | I-Services \& Consulting}{2021--2022}
+  \item Contexte : Pilotage administratif de projets IT/BTP (jusqu’à 150M€) pour le Groupe Chimique Tunisien
+  \item Coordination d’équipes pluridisciplinaires (50+ collaborateurs) dans un environnement multi-acteurs et interfonctionnel
+  \item Suivi des livrables (pilotage opérationnel, respect des délais, budgets et exigences qualité)
+  \item Gestion administratif avec les parties externes (banques, assurances, sociétés de recouvrement)
+ 
+\end{experience}
+
+% Coupure pour équilibrer les deux pages
+ \begin{experience}{Ingénieure Qualification \& Qualité | Industriel de traitement (Tanneries de Sud)}{2019--2021}
+  \item Contexte : Projet de mise en conformité environnementale (site industriel 20 employés) face à des non-conformités critiques (chrome, sulfures)
+  \item Structuration et déploiement de protocoles IQ/OQ/PQ pour l’installation de nouveaux équipements de traitement
+  \item Mise en œuvre d’actions correctives ayant permis une réduction de 85\% des polluants dans les effluents
+  \item Conformité réglementaire et obtention de la certification ISO 14001, et la levée des risques de pénalité
+  \end{experience}
+\begin{experience}{Expériences antérieures}{2004--2019}
+
+\item \textbf{Consultante en Innovation Scientifique} -- Laboratoire de Chimie de Coordination (2013--2016)  
+Projet de R\&D sur la modélisation de catalyseurs pour des applications durables. Réalisation de 500+ composés avec un rendement de 65--85\%. Rédaction de documentation scientifique structurée.
+
+\item \textbf{Ingénieure R\&D Nucléaire} -- Centre National des Sciences Nucléaires (2010--2012)  
+Optimisation de procédés de stérilisation médicale, développement d’un biocapteur gamma avec une précision de 95\%. Réduction de 50\% des incidents. Publication scientifique chez Springer.
+
+\item \textbf{Responsable Technico-Commercial} -- Coates Lorilleux (2004--2008)  
+Pilotage qualité et conformité des encres pour emballages alimentaires (normes FDA 21 CFR). Développement d’encres UV écoresponsables, réduction des coûts de production de 15\%.
+
+\end{experience}
+\cvsection{Diplôme \& Formation}
+\begin{itemize}
+    \item \textbf{Diplôme d’Ingénieure QA Logicielle} -- EPSI, École d’ingénierie informatique, Paris (2023--2024)\\
+    Spécialisation : Analyste Fullstack -- Automatisation des tests, DevOps
+
+    \item \textbf{Doctorat en Sciences Industrielles} -- INSAT, Institut National des Sciences Appliquées et de Technologie, Tunis (2019)
+
+    \item \textbf{Certifications} : ISTQB Foundation (2023) -- PSM I (Scrum.org, 2022) -- TOEIC Niveau B2
+\end{itemize}
+
+
+\cvsection{Langues}
+\begin{itemize}
+  \item Français : Bilingue / Anglais : Niveau B2 (TOEIC)/ Arabe : Langue maternelle
+\end{itemize}
+
+\end{document}
